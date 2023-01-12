@@ -99,9 +99,9 @@ spec:
             }
           } 
         }
-//        stage('Static Code Analysis') {
-//          steps {
-//            container('maven') {
+        stage('Static Code Analysis') {
+          steps {
+            container('maven') {
 //              withSonarQubeEnv('My SonarQube') { 
 //                sh """
 //                mvn sonar:sonar \
@@ -110,9 +110,9 @@ spec:
 //                  -Dsonar.login=${env.SONAR_AUTH_TOKEN}
 //                """
 //              }
-//            }
-//          }
-//        }  
+            }
+          }
+        }  
       }
     }
     stage('Containerize') {
