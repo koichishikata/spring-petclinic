@@ -139,7 +139,7 @@ spec:
 //      }
     }    
 //    stage('GitOps-based Deploy') {
-    stage(1) {
+    stage('1') {
       steps {
         container('maven') {
           sh """
