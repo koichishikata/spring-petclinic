@@ -134,9 +134,9 @@ spec:
 //        message "Proceed to deploy?"
 //        ok "YES"
 //      }
-      steps {
-        echo "Update helm chart to trigger GitOps-based deployment..."
-      }
+//      steps {
+//        echo "Update helm chart to trigger GitOps-based deployment..."
+//      }
     }    
     stage('GitOps-based Deploy') {
       steps {
