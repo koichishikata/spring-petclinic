@@ -138,8 +138,7 @@ spec:
 //        echo "Update helm chart to trigger GitOps-based deployment..."
 //      }
     }    
-//    stage('GitOps-based Deploy') {
-    stage('1') {
+    stage('GitOps-based Deploy') {
       steps {
         container('maven') {
           sh """
